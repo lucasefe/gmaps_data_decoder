@@ -20,3 +20,8 @@ assert_equal [
   ]
 ], Gdata.decode(data)
 ```
+
+
+## TODO
+
+Some strings are encoded in a specific way. Still don't know what they mean. 
