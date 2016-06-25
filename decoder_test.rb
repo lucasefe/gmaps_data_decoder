@@ -3,7 +3,7 @@ require_relative 'decoder'
 
 class TestDecoder < Minitest::Test
   def test_fail_if_no_bang
-    assert_raises(Gdata::InvalidFormatError) { Gdata.decode("") }
+    assert_raises(GMapsData::InvalidFormatError) { GMapsData.decode("") }
   end
 
   def test_decode_4m5
@@ -16,7 +16,7 @@ class TestDecoder < Minitest::Test
           "-122.4189024"
         ]
       ]
-    ], Gdata.decode(data)
+    ], GMapsData.decode(data)
   end
 
   def test_decode_3m1
@@ -32,6 +32,6 @@ class TestDecoder < Minitest::Test
           ]
         ]
       ]
-    ], Gdata.decode(data)
+    ], GMapsData.decode(data)
   end
 end

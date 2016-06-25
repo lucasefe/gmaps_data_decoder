@@ -1,4 +1,4 @@
-module Gdata
+module GMapsData
   class InvalidFormatError < Exception; end
 
   MATRIX_MATCHER = /\d*m\d*/
